@@ -1,0 +1,31 @@
+# <PropertyName>=<PropertyValue>
+
+SSHTunnelEnabled=0
+SSHTunnelUserName=LinuxUser
+SSHTunnelKeyFile=/LinuxUser/.ssh/id_rsa
+SSHTunnelTimeOut=120
+SSHTunnelEndPoint=1.1.1.1
+SSHTunnelRemotePort=3306
+
+SourceDbServer=127.0.0.1
+SourceDbServerPort=3306
+SourceDbUserName=
+SourceDbPassword=
+SourceDbName=
+
+DestinationDbServer=127.0.0.1
+DestinationDbServerPort=3306
+DestinationDbUserName=
+DestinationDbPassword=
+DestinationDbName=
+
+TablesToSync=wp_prli_clicks
+SourceDomain=WebSiteFQDN
+DestinationDomain=stg.WebSiteFQDN
+SourcePath=/var/www/WebSiteFQDN/public_html/
+DestinationPath=/var/www/stg.WebSiteFQDN/public_html/
+PostContentFilter=post_content LIKE '[NO_TRANSFER]%'
+PostMetaContentFilter=meta_key LIKE '__wpdm_download_count'
+
+WPCLISessionSettings=wpcli-stg.yml
+WPTablePrefix=wp_

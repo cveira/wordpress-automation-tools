@@ -1,0 +1,14 @@
+#<file|folder|tree>:<ApplyRules|FullControl>:/path/folder
+
+tree:ApplyRules:/var/www/WebSiteFQDN/public_html/wp-content/plugins/bulletproof-security/admin/htaccess/
+tree:ApplyRules:/var/www/WebSiteFQDN/public_html/wp-content/uploads/
+tree:ApplyRules:/var/www/WebSiteFQDN/public_html/wp-content/cache/
+tree:ApplyRules:/var/www/WebSiteFQDN/public_html/wp-content/w3tc-config
+tree:ApplyRules:/var/www/WebSiteFQDN/public_html/wp-content/bps-backup/
+tree:ApplyRules:/var/www/WebSiteFQDN/public_html/wp-content/plugins/wordfence/tmp/
+
+folder:FullControl:/var/www/WebSiteFQDN/public_html/wp-content/uploads/
+folder:FullControl:/var/www/WebSiteFQDN/public_html/wp-content/cache/
+folder:FullControl:/var/www/WebSiteFQDN/public_html/wp-content/bps-backup/
+
+file:ApplyRules:/var/www/WebSiteFQDN/public_html/wp-content/plugins/.htaccess

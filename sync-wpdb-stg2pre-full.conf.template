@@ -1,0 +1,31 @@
+# <PropertyName>=<PropertyValue>
+
+SSHTunnelEnabled=1
+SSHTunnelUserName=LinuxUser
+SSHTunnelKeyFile=/LinuxUser/.ssh/id_rsa
+SSHTunnelTimeOut=120
+SSHTunnelEndPoint=1.1.1.1
+SSHTunnelRemotePort=3306
+
+SourceDbServer=127.0.0.1
+SourceDbServerPort=3306
+SourceDbUserName=
+SourceDbPassword=
+SourceDbName=
+
+DestinationDbServer=127.0.0.1
+DestinationDbServerPort=3307
+DestinationDbUserName=
+DestinationDbPassword=
+DestinationDbName=
+
+TablesToSync=wp_terms,wp_term_relationships,wp_term_taxonomy,wp_users,wp_usermeta,wp_layerslider,wp_prli_links,wp_prli_link_metas,wp_prli_groups
+SourceDomain=stg.WebSiteFQDN
+DestinationDomain=pre.WebSiteFQDN
+SourcePath=/var/www/stg.WebSiteFQDN/public_html/
+DestinationPath=/var/www/pre.WebSiteFQDN/public_html/
+PostContentFilter=1 LIKE 1
+PostMetaContentFilter=1 LIKE 1
+
+WPCLISessionSettings=wpcli-pre.yml
+WPTablePrefix=wp_

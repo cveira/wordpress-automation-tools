@@ -1,0 +1,20 @@
+# <PropertyName>=<PropertyValue>
+# Folder paths can't have a trailing slash ("/")
+
+TargetPath=/var/www/WebSiteFQDN/public_html
+ExceptionsFile=lock-fstree-default-exceptions.conf
+
+LockOwner=root:root
+LockFileACL=0644
+LockDirACL=0755
+
+UnLockOwner=www-data:www-data
+UnLockFileACL=0644
+UnLockDirACL=0755
+
+ExceptionOwner=www-data:www-data
+ExceptionFileACL=0644
+ExceptionDirACL=0755
+
+FullControlFileACL=0777
+FullControlDirACL=0777

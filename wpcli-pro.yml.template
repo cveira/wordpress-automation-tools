@@ -1,0 +1,6 @@
+path: /var/www/WebSiteFQDN/public_html/
+url:  https://HttpBasicAuthUser:UrlEncodedPassword@WebSiteFQDN
+user: WordPressUser
+core config:
+        dbuser: WordPressDbUser
+        dbpass: WordPressDbPassword

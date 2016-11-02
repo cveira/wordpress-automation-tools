@@ -1,0 +1,9 @@
+# <PropertyName>:<PropertyValue>
+# Folder paths can't have a trailing slash ("/")
+
+BackupFolder:/var/www/WebSiteFQDN/bak
+SiteFolder:/var/www/stg.WebSiteFQDN/public_html
+DbServer:localhost
+DbName:
+DbUser:
+DbPassword:

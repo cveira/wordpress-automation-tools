@@ -1,0 +1,8 @@
+# <PropertyName>:<PropertyValue>
+# Folder paths can't have a trailing slash ("/")
+
+TargetPath:/var/www/WebSiteFQDN/bak
+FileGroups:3
+FileGroupInstancesToDelete:1
+FilesPerGroup:1
+MinimumFileGroupInstances:10
