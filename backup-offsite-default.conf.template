@@ -1,9 +1,9 @@
-# <PropertyName>:<PropertyValue>
+# <PropertyName>=<PropertyValue>
 # Folder paths can't have a trailing slash ("/")
 
-RemoteNode:1.1.1.1
-RemoteUserName:LinuxUser
-LocalDir:/var/www/WebSiteFQDN/bak
-RemoteDir:/var/www/WebSiteFQDN/dr
-SSHIdentityFile:/home/LinuxUser/.ssh/id_rsa
-FilesToTransfer:2
+RemoteNode=1.1.1.1
+RemoteUserName=LinuxUser
+LocalDir=/var/www/WebSiteFQDN/bak
+RemoteDir=/var/www/WebSiteFQDN/dr
+SSHIdentityFile=/home/LinuxUser/.ssh/id_rsa
+FilesToTransfer=2

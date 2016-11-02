@@ -1,9 +1,9 @@
-# <PropertyName>:<PropertyValue>
+# <PropertyName>=<PropertyValue>
 # Folder paths can't have a trailing slash ("/")
 
-BackupFolder:/var/www/WebSiteFQDN/bak
-SiteFolder:/var/www/WebSiteFQDN/public_html
-DbServer:localhost
-DbName:
-DbUser:
-DbPassword:
+BackupFolder=/var/www/WebSiteFQDN/bak
+SiteFolder=/var/www/WebSiteFQDN/public_html
+DbServer=localhost
+DbName=
+DbUser=
+DbPassword=

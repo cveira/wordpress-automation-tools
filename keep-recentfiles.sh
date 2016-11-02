@@ -113,8 +113,8 @@ echo "[Keep-RecentFiles] $(date '+%Y/%m/%d %H:%M:%S'): Loading configuration ...
 
 IFS=$'\n'
 for ConfigurationItem in $( cat $InstallDir/"keep-recentfiles-$ConfigurationProfile.conf" | grep -v "#" | grep . ); do
-  PropertyName=`echo $ConfigurationItem  | awk -F ":" '{ print $1 }'`
-  PropertyValue=`echo $ConfigurationItem | awk -F ":" '{ print $2 }'`
+  PropertyName=`echo $ConfigurationItem  | awk -F "=" '{ print $1 }'`
+  PropertyValue=`echo $ConfigurationItem | awk -F "=" '{ print $2 }'`
 
   if [ $PropertyName == $TargetPath                 ] ; then TargetPath="$PropertyValue"                 ; fi
   if [ $PropertyName == $FileGroups                 ] ; then FileGroups="$PropertyValue"                 ; fi

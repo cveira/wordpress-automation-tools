@@ -98,8 +98,8 @@ echo "[Backup-Site] $(date '+%Y/%m/%d %H:%M:%S'): ------------------------------
 echo "[Backup-Site] $(date '+%Y/%m/%d %H:%M:%S'): Loading configuration ..."
 
 for ConfigurationItem in $( cat "$InstallDir/backup-site-$ConfigurationProfile.conf" | grep -v "#" | grep . ); do
-  PropertyName=`echo $ConfigurationItem  | awk -F ":" '{ print $1 }'`
-  PropertyValue=`echo $ConfigurationItem | awk -F ":" '{ print $2 }'`
+  PropertyName=`echo $ConfigurationItem  | awk -F "=" '{ print $1 }'`
+  PropertyValue=`echo $ConfigurationItem | awk -F "=" '{ print $2 }'`
 
   if [ $PropertyName == $BackupFolder ] ; then BackupFolder="$PropertyValue" ; fi
   if [ $PropertyName == $SiteFolder   ] ; then SiteFolder="$PropertyValue"   ; fi

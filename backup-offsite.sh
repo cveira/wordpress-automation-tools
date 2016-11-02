@@ -95,8 +95,8 @@ echo "[Backup-Offsite] $(date '+%Y/%m/%d %H:%M:%S'): ---------------------------
 echo "[Backup-Offsite] $(date '+%Y/%m/%d %H:%M:%S'): Loading configuration ..."
 
 for ConfigurationItem in $( cat "$InstallDir/backup-offsite-$ConfigurationProfile.conf" | grep -v "#" | grep . ); do
-  PropertyName=`echo $ConfigurationItem  | awk -F ":" '{ print $1 }'`
-  PropertyValue=`echo $ConfigurationItem | awk -F ":" '{ print $2 }'`
+  PropertyName=`echo $ConfigurationItem  | awk -F "=" '{ print $1 }'`
+  PropertyValue=`echo $ConfigurationItem | awk -F "=" '{ print $2 }'`
 
   if [ $PropertyName == $RemoteNode      ] ; then RemoteNode="$PropertyValue"      ; fi
   if [ $PropertyName == $RemoteUserName  ] ; then RemoteUserName="$PropertyValue"  ; fi

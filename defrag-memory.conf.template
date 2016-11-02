@@ -1,7 +1,7 @@
-# <PropertyName>:<PropertyValue>
+# <PropertyName>=<PropertyValue>
 # Folder paths can't have a trailing slash ("/")
 
-ProxyServerService:haproxy_svc
-WebServerService:apache_svc
-AppServerService:php_svc
-DbServerService:mysql_svc
+ProxyServerService=haproxy_svc
+WebServerService=apache_svc
+AppServerService=php_svc
+DbServerService=mysql_svc

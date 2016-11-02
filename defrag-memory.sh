@@ -99,8 +99,8 @@ echo "[Defrag-Memory] $(date '+%Y/%m/%d %H:%M:%S'): ----------------------------
 echo "[Defrag-Memory] $(date '+%Y/%m/%d %H:%M:%S'): Loading configuration ..."
 
 for ConfigurationItem in $( cat $InstallDir/defrag-memory.conf | grep -v "#" | grep . ); do
-  PropertyName=`echo $ConfigurationItem  | awk -F ":" '{ print $1 }'`
-  PropertyValue=`echo $ConfigurationItem | awk -F ":" '{ print $2 }'`
+  PropertyName=`echo $ConfigurationItem  | awk -F "=" '{ print $1 }'`
+  PropertyValue=`echo $ConfigurationItem | awk -F "=" '{ print $2 }'`
 
   if [ $PropertyName == $ProxyServerService ] ; then ProxyServerService="$PropertyValue" ; fi
   if [ $PropertyName == $WebServerService ]   ; then WebServerService="$PropertyValue"   ; fi
